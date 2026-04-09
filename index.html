@@ -1046,7 +1046,7 @@ async function sendMsg(text) {
   document.getElementById('chat-send').disabled = true;
 
   try {
-    const res = await fetch('rajeevan-chat-proxy.narasimharajeevan.workers.dev', {
+    const res = await fetch('https://rajeevan-chat-proxy.narasimharajeevan.workers.dev/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
